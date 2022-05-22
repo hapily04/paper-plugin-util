@@ -52,6 +52,7 @@ public class Menu implements InventoryHolder {
             this.size = inventory.getSize();
             this.name = name == null ? type.defaultTitle() : name;
             this.type = type;
+            this.menuItemHashMap = new HashMap<>();
             PaperPluginUtil.getInstance().getManager().menus.add(this);
         }
     }
