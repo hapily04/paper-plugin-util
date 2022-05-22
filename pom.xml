@@ -7,7 +7,7 @@
     <groupId>me.hapily.plugins.util</groupId>
     <artifactId>paper-plugin-util</artifactId>
     <version>1.0</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <name>Paper Plugin Util</name>
 
