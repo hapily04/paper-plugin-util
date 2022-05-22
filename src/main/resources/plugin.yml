@@ -1,0 +1,4 @@
+name: Paper Plugin Util
+version: '${project.version}'
+main: me.hapily.plugins.util.paperpluginutil.PaperPluginUtil
+api-version: 1.18
