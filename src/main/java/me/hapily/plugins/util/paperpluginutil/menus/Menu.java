@@ -1,15 +1,14 @@
 package me.hapily.plugins.util.paperpluginutil.menus;
 
+import me.hapily.plugins.util.paperpluginutil.PaperPluginUtil;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.Player;
-import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.util.Consumer;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -53,6 +52,7 @@ public class Menu implements InventoryHolder {
             this.size = inventory.getSize();
             this.name = name == null ? type.defaultTitle() : name;
             this.type = type;
+            PaperPluginUtil.getInstance().getManager().menus.add(this);
         }
     }
 
